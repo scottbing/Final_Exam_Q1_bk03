@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/prompt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a word."/>
+
+        <EditText
+            android:id="@+id/word1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/prompt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a word."/>
+
+        <EditText
+            android:id="@+id/word2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/prompt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a word."/>
+
+        <EditText
+            android:id="@+id/word3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/haiku"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gen Haiku" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/haiku_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="10"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature.This is sample TextView Text with scrolling feature."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:scrollbars="vertical" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
